@@ -7,8 +7,6 @@
 
 **OncoPredict AI** is a machine learning-based diagnostic system designed for **early and accurate detection of breast cancer**. Built using the Breast Cancer Wisconsin (Diagnostic) Dataset, it classifies tumors as **benign** or **malignant** based on digitized image features of cell nuclei, supporting better and faster clinical decision-making.
 
-This project not only includes a detailed analytical notebook but also features an interactive **Streamlit web application** for real-time predictions.
-
 ---
 
 ## Key Features
@@ -17,7 +15,6 @@ This project not only includes a detailed analytical notebook but also features 
 -   🧪 Minimizes false negatives, crucial for safe medical predictions.
 -   🤖 Dual-model setup: **Logistic Regression** & **Random Forest** for robust predictions.
 -   📈 Comprehensive evaluation includes ROC-AUC, confusion matrix, precision, recall, and F1-score.
--   🌐 **Interactive Streamlit App:** Easily demonstrate predictions and explore model performance.
 
 ---
 
