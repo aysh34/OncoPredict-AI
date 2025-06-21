@@ -1,5 +1,5 @@
 # OncoPredict AI – Breast Cancer Detection with Machine Learning
-[![Ayesha Saleem – GitHub](https://img.shields.io/badge/Author%20%7C%20Ayesha%20Saleem-orange?style=flat-square&logo=github)](https://github.com/aysh34)
+[![Author: Ayesha Saleem](https://img.shields.io/badge/Author-Ayesha%20Saleem-orange?style=flat-square&logo=github)](https://github.com/aysh34)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Jupyter%20%7C%20Python%20-bue?style=flat-square)
 ![Status](https://img.shields.io/badge/status-active-blue?style=flat-square)
