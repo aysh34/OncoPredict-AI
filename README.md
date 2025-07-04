@@ -61,31 +61,6 @@ Ensure you have Python 3.8+ installed on your system.
 - **Robustness**: Handles feature interactions effectively
 
 
-## 📈 Usage
-
-### Basic Usage
-
-```python
-from src.models import OncoPredictor
-
-# Initialize the predictor
-predictor = OncoPredictor()
-
-# Load and preprocess data
-predictor.load_data('data/breast_cancer_data.csv')
-predictor.preprocess()
-
-# Train models
-predictor.train_models()
-
-# Make predictions
-predictions = predictor.predict(new_data)
-```
-
-### Advanced Usage
-
-For detailed usage examples, please refer to the Jupyter notebooks in the `notebooks/` directory.
-
 ## 🤝 Contributing
 
 We welcome contributions to improve OncoPredict-AI! Please follow these guidelines:
@@ -114,16 +89,8 @@ If you encounter any issues, please report them on our [Issues page](https://git
 ## 📞 Support
 
 For questions or support, please contact:
-- **Email**: [your-email@example.com]
+- **Email**: [ayeshasaleem853@gmail.com]
 - **GitHub Issues**: [Create an issue](https://github.com/aysh34/OncoPredict-AI/issues)
-
-## 🔮 Future Enhancements
-
-- [ ] Integration with DICOM medical imaging
-- [ ] Real-time prediction API
-- [ ] Model interpretability with SHAP/LIME
-- [ ] Multi-class cancer type prediction
-- [ ] Mobile application for clinical use
 
 ## 📄 Citation
 
@@ -134,13 +101,13 @@ If you use OncoPredict-AI in your research, please cite:
   author = {Aysh34},
   title = {OncoPredict-AI: Machine Learning for Breast Cancer Detection},
   url = {https://github.com/aysh34/OncoPredict-AI},
-  year = {2024}
+  year = {2025}
 }
 ```
 
 ## ⚖️ License
 
-Copyright © 2024 Aysh34. All rights reserved.
+Copyright © 2025 Aysh34. All rights reserved.
 
 This project is licensed under a **Custom Restrictive License**. See the [LICENSE](LICENSE) file for details.
 
