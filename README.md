@@ -109,8 +109,6 @@ If you use OncoPredict-AI in your research, please cite:
 
 Copyright © 2025 Aysh34. All rights reserved.
 
-This project is licensed under a **Custom Restrictive License**. See the [LICENSE](LICENSE) file for details.
-
 ### License Summary
 
 - ✅ **Personal Use**: Allowed
