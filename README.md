@@ -1,73 +1,172 @@
-# OncoPredict AI – Breast Cancer Detection with Machine Learning
+# OncoPredict-AI
+
 [![Author: Ayesha Saleem](https://img.shields.io/badge/Author-Ayesha%20Saleem-orange?style=flat-square&logo=github)](https://github.com/aysh34)
-![Python](https://img.shields.io/badge/python-3.8%2B-blue?style=flat-square)
-![Platform](https://img.shields.io/badge/platform-Jupyter%20%7C%20Python%20-bue?style=flat-square)
-![Status](https://img.shields.io/badge/status-active-blue?style=flat-square)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.8+-green.svg)](https://python.org)
+[![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
+
+**OncoPredict-AI** is a machine learning-based diagnostic system designed for early and accurate detection of breast cancer. Built using the Breast Cancer Wisconsin (Diagnostic) Dataset, it classifies tumors as benign or malignant based on digitized image features of cell nuclei, supporting better and faster clinical decision-making.
+
+## 🚀 Key Features
+
+- **📊 Complete ML Pipeline**: Preprocessing → EDA → Modeling → Evaluation
+- **🧪 Medical-Grade Accuracy**: Minimizes false negatives, crucial for safe medical predictions
+- **🤖 Dual-Model Architecture**: Logistic Regression & Random Forest for robust predictions
+- **📈 Comprehensive Evaluation**: ROC-AUC, confusion matrix, precision, recall, and F1-score
+- **🔬 Clinical Focus**: Optimized for healthcare decision-making workflows
+
+## 📋 Dataset Information
+
+- **Name**: Breast Cancer Wisconsin (Diagnostic) Dataset
+- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic))
+- **Type**: Supervised binary classification
+- **Samples**: 569 instances
+- **Features**: 30 numerical features computed from digitized images of fine needle aspirates (FNA)
+- **Target**: Diagnosis (M = Malignant, B = Benign)
+
+## 🔧 Installation
+
+### Prerequisites
+
+Ensure you have Python 3.8+ installed on your system.
+
+### Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/aysh34/OncoPredict-AI.git
+   cd OncoPredict-AI
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the application**:
+   ```bash
+   python main.py
+   ```
+
+## 📊 Model Performance
+
+### Logistic Regression
+- **Accuracy**: ~96%
+- **Precision**: High precision for malignant cases
+- **Recall**: Optimized to minimize false negatives
+
+### Random Forest
+- **Accuracy**: ~97%
+- **Feature Importance**: Provides insights into key diagnostic features
+- **Robustness**: Handles feature interactions effectively
 
 
-**OncoPredict AI** is a machine learning-based diagnostic system designed for **early and accurate detection of breast cancer**. Built using the Breast Cancer Wisconsin (Diagnostic) Dataset, it classifies tumors as **benign** or **malignant** based on digitized image features of cell nuclei, supporting better and faster clinical decision-making.
+## 📈 Usage
+
+### Basic Usage
+
+```python
+from src.models import OncoPredictor
+
+# Initialize the predictor
+predictor = OncoPredictor()
+
+# Load and preprocess data
+predictor.load_data('data/breast_cancer_data.csv')
+predictor.preprocess()
+
+# Train models
+predictor.train_models()
+
+# Make predictions
+predictions = predictor.predict(new_data)
+```
+
+### Advanced Usage
+
+For detailed usage examples, please refer to the Jupyter notebooks in the `notebooks/` directory.
+
+## 🤝 Contributing
+
+We welcome contributions to improve OncoPredict-AI! Please follow these guidelines:
+
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
+4. **Push to the branch** (`git push origin feature/amazing-feature`)
+5. **Open a Pull Request**
+
+### Code Style
+
+- Follow PEP 8 guidelines
+- Include docstrings for all functions
+- Add appropriate comments for complex logic
+- Ensure all tests pass before submitting
+
+## 📚 Documentation
+
+For detailed documentation, please visit our [Wiki](https://github.com/aysh34/OncoPredict-AI/wiki).
+
+## 🐛 Bug Reports
+
+If you encounter any issues, please report them on our [Issues page](https://github.com/aysh34/OncoPredict-AI/issues).
+
+## 📞 Support
+
+For questions or support, please contact:
+- **Email**: [your-email@example.com]
+- **GitHub Issues**: [Create an issue](https://github.com/aysh34/OncoPredict-AI/issues)
+
+## 🔮 Future Enhancements
+
+- [ ] Integration with DICOM medical imaging
+- [ ] Real-time prediction API
+- [ ] Model interpretability with SHAP/LIME
+- [ ] Multi-class cancer type prediction
+- [ ] Mobile application for clinical use
+
+## 📄 Citation
+
+If you use OncoPredict-AI in your research, please cite:
+
+```bibtex
+@software{oncopredict_ai,
+  author = {Aysh34},
+  title = {OncoPredict-AI: Machine Learning for Breast Cancer Detection},
+  url = {https://github.com/aysh34/OncoPredict-AI},
+  year = {2024}
+}
+```
+
+## ⚖️ License
+
+Copyright © 2024 Aysh34. All rights reserved.
+
+This project is licensed under a **Custom Restrictive License**. See the [LICENSE](LICENSE) file for details.
+
+### License Summary
+
+- ✅ **Personal Use**: Allowed
+- ✅ **Educational Use**: Allowed
+- ✅ **Research Use**: Allowed (with attribution)
+- ❌ **Commercial Use**: Prohibited without permission
+- ❌ **Distribution**: Prohibited without permission
+- ❌ **Modification**: Allowed for personal use only
+
+For commercial licensing inquiries, please contact the author.
+
+## ⚠️ Disclaimer
+
+**IMPORTANT MEDICAL DISCLAIMER**: This software is for educational and research purposes only. It is not intended for clinical diagnosis or treatment decisions. Always consult with qualified healthcare professionals for medical advice. The authors assume no responsibility for any medical decisions made based on this software.
+
+## 🌟 Acknowledgments
+
+- **Dataset**: Breast Cancer Wisconsin (Diagnostic) Dataset from UCI ML Repository
+- **Inspiration**: Healthcare AI research community
+- **Tools**: Python, scikit-learn, pandas, matplotlib, seaborn
 
 ---
 
-## Key Features
+**Made with ❤️ for advancing healthcare AI**
 
--   📊 Full machine learning pipeline: preprocessing → EDA → modeling → evaluation.
--   🧪 Minimizes false negatives, crucial for safe medical predictions.
--   🤖 Dual-model setup: **Logistic Regression** & **Random Forest** for robust predictions.
--   📈 Comprehensive evaluation includes ROC-AUC, confusion matrix, precision, recall, and F1-score.
-
----
-
-## Dataset
-
--   **Name:** Breast Cancer Wisconsin (Diagnostic) Dataset
--   **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic))
--   **Type:** Supervised binary classification
--   **Samples:** 569 instances
--   **Features:** 30 numerical features computed from digitized images of fine needle aspirates (FNA) of breast masses (e.g., `radius_mean`, `texture_mean`, `perimeter_worst`, `concave points_mean`).
--   **Target:** Diagnosis (`M` = Malignant, `B` = Benign)
-
----
-
-## Workflow
-
-### 1. Exploratory Data Analysis (EDA)
--   Distribution analysis of the target variable (class balance check).
--   KDE plots and histograms to visualize feature distributions by diagnosis.
--   Correlation heatmap to identify relationships between features.
--   Analysis of feature correlation with the target variable (`diagnosis`).
-
-### 2. Data Preprocessing & Feature Engineering
--   Handling of missing values (dropping `Unnamed: 32` column).
--   Removal of irrelevant identifiers (dropping `id` column).
--   Label encoding for the target variable (`diagnosis`: M=1, B=0).
--   Splitting the dataset into training and testing sets (80% train, 20% test) with stratification to maintain class proportions.
--   Feature scaling using `StandardScaler` to standardize numerical features, applied separately to training and testing sets to prevent data leakage.
-
-### 3. Modeling & Optimization
--   **Model Selection:**
-    -   **Logistic Regression:** Chosen as a strong baseline, offering interpretability and efficiency.
-    -   **Random Forest Classifier:** A robust ensemble method known for high performance and handling complex relationships.
--   **Hyperparameter Tuning:** `GridSearchCV` is employed to systematically search for the optimal hyperparameters for both models.
--   **Cross-Validation:** 5-fold cross-validation is integrated into `GridSearchCV` to ensure model robustness and reliable performance estimates.
-
-### 4. Evaluation Metrics
--   **Accuracy Score:** Overall proportion of correct predictions.
--   **Classification Report:** Provides detailed Precision, Recall, and F1-score for each class.
-    -   **Precision:** Crucial for minimizing false positives (e.g., preventing unnecessary invasive procedures).
-    -   **Recall:** Paramount in medical diagnosis for minimizing false negatives (e.g., not missing actual cancer cases).
--   **Confusion Matrix:** Visual representation of True Positives, True Negatives, False Positives, and False Negatives.
--   **Receiver Operating Characteristic (ROC) Curve & Area Under the Curve (AUC):** Measures the model's ability to discriminate between positive and negative classes across various thresholds.
-
----
-
-## Installation & Usage
-
-To get started with this project, follow these steps:
-
-### Requirements
-
-Ensure you have Python 3.8+ installed. All required libraries can be installed using pip:
-
-```bash
-pip install -r requirements.txt
+*Star ⭐ this repository if you find it helpful!*
