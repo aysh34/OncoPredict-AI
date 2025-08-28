@@ -6,7 +6,7 @@
 
 
 ## Abstract  
-Breast cancer remains one of the most common cancers worldwide, with early detection being essential for reducing mortality. This study applies machine learning techniques to classify breast tumors as malignant or benign using the **Breast Cancer Wisconsin (Diagnostic) Dataset**. Two models—**Logistic Regression** and **Random Forest** were developed and rigorously evaluated. Both models achieved high predictive performance, with Logistic Regression achieving an AUC of **0.9977** and Random Forest an AUC of **0.9929**. The results demonstrate the potential of machine learning to support clinical decision-making by reducing false negatives and improving diagnostic reliability.  
+Breast cancer remains one of the most common cancers worldwide, with early detection being essential for reducing mortality. This study applies machine learning techniques to classify breast tumors as malignant or benign using the **Breast Cancer Wisconsin (Diagnostic) Dataset**. Two models, **Logistic Regression** and **Random Forest** were developed and rigorously evaluated. Both models achieved high predictive performance, with Logistic Regression achieving an AUC of **0.9977** and Random Forest an AUC of **0.9929**. The results demonstrate the potential of machine learning to support clinical decision-making by reducing false negatives and improving diagnostic reliability.  
 
 ---
 
