@@ -8,14 +8,13 @@
 ## Abstract  
 Breast cancer remains one of the most common cancers worldwide, with early detection being essential for reducing mortality. This study applies machine learning techniques to classify breast tumors as malignant or benign using the **Breast Cancer Wisconsin (Diagnostic) Dataset**. Two models, **Logistic Regression** and **Random Forest** were developed and rigorously evaluated. Both models achieved high predictive performance, with Logistic Regression achieving an AUC of **0.9977** and Random Forest an AUC of **0.9929**. The results demonstrate the potential of machine learning to support clinical decision-making by reducing false negatives and improving diagnostic reliability.  
 
----
 
 ## Introduction  
 Cancer diagnosis is traditionally based on manual interpretation of biopsies and imaging data, which can be time-consuming and prone to variability across practitioners. In contrast, machine learning algorithms can learn patterns from large-scale data, providing consistent, fast, and accurate predictions.  
 
 This study develops a **machine learning pipeline** to detect breast cancer tumors. The models were trained to predict whether a tumor is **benign (0)** or **malignant (1)**, based on image-derived cellular features. The goal is to achieve **high sensitivity (recall)**, ensuring that malignant tumors are not misclassified as benign, as such errors can have life-threatening consequences.  
 
----
+
 
 ## Dataset Overview  
 - **Name**: Breast Cancer Wisconsin (Diagnostic) Dataset  
@@ -34,7 +33,7 @@ For each feature, three statistical values are reported:
 **Target Variable**:  
 - `diagnosis`: Malignant (1) or Benign (0).  
 
----
+
 
 ## Methodology  
 
@@ -58,7 +57,7 @@ For each feature, three statistical values are reported:
    - Generated confusion matrices.  
    - Computed ROC-AUC curves to measure discriminative ability.  
 
----
+
 
 ## Results  
 
@@ -73,7 +72,7 @@ For each feature, three statistical values are reported:
 - Recall: 0.95 (malignant), 1.00 (benign).  
 - Balanced F1-score across classes.  
 
----
+
 
 ### Random Forest  
 - **Best Parameters**: `n_estimators=100`, `max_features='sqrt'`, `max_depth=None`.  
@@ -85,25 +84,25 @@ For each feature, three statistical values are reported:
 - Precision: 1.00 (malignant), 0.96 (benign).  
 - Recall: 0.93 (malignant), 1.00 (benign).  
 
----
+
 
 ### Visualizations  
 - **Confusion Matrices**: Both models had minimal misclassifications, with Logistic Regression slightly outperforming Random Forest in recall for malignant cases.  
 - **ROC Curves**: Both models demonstrated near-perfect separability, with Logistic Regression showing marginally superior AUC.  
 
----
+
 
 ## Discussion  
 Both Logistic Regression and Random Forest classifiers performed exceptionally well. Importantly, **recall values were prioritized**, since failing to detect malignant tumors is clinically unacceptable. Logistic Regression, despite being simpler and more interpretable, achieved slightly better discriminative performance compared to Random Forest.  
 
 The feature importance analysis confirmed prior medical knowledge: features related to **tumor size and shape irregularities** (e.g., perimeter, concavity, radius) strongly correlated with malignancy.  
 
----
+
 
 ## Conclusion  
 This study demonstrates the feasibility of using machine learning for breast cancer detection. Both models achieved accuracy above **97%** with near-perfect AUC scores. Logistic Regression proved to be both **accurate and interpretable**, making it a practical choice for medical diagnostic tools.  
 
----
+
 
 ## References  
 1. Street, W. N., Wolberg, W. H., & Mangasarian, O. L. (1993). *Nuclear feature extraction for breast tumor diagnosis*. IS&T/SPIE International Symposium on Electronic Imaging.  
